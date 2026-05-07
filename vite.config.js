@@ -4,7 +4,10 @@ import vue from '@vitejs/plugin-vue'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: './',
+  base: 'https://www.ainav.com/',
+  server: {
+    host: '0.0.0.0',
+  },
   build: {
     target: 'es2015',
     minify: 'esbuild',

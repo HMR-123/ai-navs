@@ -28,12 +28,22 @@
 # 安装依赖
 npm install
 
-# 启动开发服务器
+# 启动开发服务器（本机局域网可访问）
 npm run dev
 
 # 构建生产版本
 npm run build
 ```
+
+## 部署到自定义域名
+
+如果您希望部署到自定义域名 `https://www.ainav.com`：
+
+1. 将 `vite.config.js` 中 `base` 设置为 `https://www.ainav.com/`。
+2. 使用静态站点托管服务上传 `dist` 目录，或自行配置服务器绑定该域名。
+3. 将域名 DNS 指向部署服务器地址，确保 `https://www.ainav.com` 能访问到静态站点。
+
+> 注意：本地开发时 `localhost` 地址只能用于本机预览，真正的域名访问需要域名解析和部署服务器支持。
 
 ## 友情链接
 
